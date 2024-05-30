@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finteger</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        /* font-size: 10px; */
+
+        /* 10px / 16px = 0.625 = 62.5% */
+        /* Percentage of user's browser font-size setting */
+        font-size: 62.5%;
+        overflow-x: hidden;
+      }
+
+      body {
+        font-family: "Rubik", sans-serif;
+        line-height: 1;
+        font-weight: 400;
+        color: #555;
+        background-color: #708090;
+
+        /* Only works if there is nothing absolutely positioned in relation to body */
+        overflow-x: hidden;
+      }
+
+      /* .carousel-image-container{
+              border-radius: 50%;
+          }
+          .carousel-image{
+              width: 90%;
+              padding: 0 auto;
+          } */
+      .container {
+        /* 1140px */
+        max-width: 120rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+        margin-top: 32px;
+      }
+
+      .grid {
+        display: grid;
+        column-gap: 6.4rem;
+        row-gap: 9.6rem;
+
+        /* margin-bottom: 9.6rem; */
+      }
+
+      .carousel-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        border-radius: 16px;
+        border: #3b3a3a solid 1px;
+      }
+      .carousel-image-container {
+        margin-top: 32px;
+      }
+      .flex-box-container {
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%;
+        border-radius: 16px;
+      }
+      .flex-box-container {
+        display: flex;
+      }
+      h2 {
+        font-size: 4.4rem;
+        line-height: 1.2;
+      }
+      p {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 300;
+        word-spacing: 8px;
+        margin-top: 12px;
+      }
+      .about-us-container {
+        background-color: white;
+        position: relative;
+        padding-left: 12px;
+      }
+      .span-container {
+        color: #f9c000;
+      }
+      .btn-learn-more-about-us {
+        color: #003366;
+        background-color: white;
+        text-transform: capitalize;
+        border: #003366 solid 1px;
+        bottom: 12px;
+        position: absolute;
+      }
+
+      .btn,
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1.6rem 3.2rem;
+        border-radius: 24px;
+
+        /* Only necessary for .btn */
+        /* border: none; */
+        cursor: pointer;
+        font-family: inherit;
+
+        /* Put transition on original "state" */
+        /* transition: background-color 0.3s; */
+        transition: all 0.3s;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: #036;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-carousel">
+      <div class="carousel-image-container">
+        <img
+          class="carousel-image"
+          src="./resources/carouselImage.webp"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="section-about-us">
+      <div class="flex-box-container">
+        <img class="" src="./resources/block.webp" alt="" />
+        <div class="about-us-container">
+          <h2>About Us</h2>
+          <p>
+            We are a sector agnostic professional services firm passionately
+            committed to delivering innovative, tailor-made, sustainable
+            solutions in <span class="span-container">finance operations</span>.
+          </p>
+          <p>
+            <span class="span-container">Every solution </span>is
+            <span class="span-container">crafted </span>to meet your specific
+            needs, creating perfect harmony between your
+            <span class="span-container"> outsourcing strategy </span>and your
+            broader business objectives.
+          </p>
+          <p>
+            Our leadership team brings a combined 36+years of experience across
+            <span class="span-container">diverse geographies</span> and
+            <span class="span-container">industries</span>. This depth equips us
+            to tackle
+            <span class="span-container"
+              >complex modern business challenges</span
+            >, using a blend of foresight, industry knowledge, and adaptable
+            methods.
+          </p>
+          <button class="btn-learn-more-about-us btn">
+            LEARN MORE ABOUT US
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
